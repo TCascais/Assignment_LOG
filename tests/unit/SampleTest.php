@@ -80,7 +80,7 @@ class SampleTest extends \PHPUnit\Framework\TestCase
 
         $sequence = $sequenceObj->manipulateSequenceArray("30", "3", "5");
 
-        $this->assertEquals($sequence[2], "fizzfizz");
+        $this->assertEquals($sequence[2], "fizz fizz");
     }
 
     public function test_that_BuzzMultiple_AND_BuzzRepresentation_is_buzzbuzz_in_SequenceArray()
@@ -89,7 +89,7 @@ class SampleTest extends \PHPUnit\Framework\TestCase
 
         $sequence = $sequenceObj->manipulateSequenceArray("30", "3", "5");
 
-        $this->assertEquals($sequence[4], "buzzbuzz");
+        $this->assertEquals($sequence[4], "buzz buzz");
     }
 
     public function test_that_all_works_with_high_sequence()
@@ -111,10 +111,8 @@ class SampleTest extends \PHPUnit\Framework\TestCase
 
         $this->assertEquals($sequence[344], "lucky");
 
-        $this->assertEquals($sequence[302], "fizzfizz");
-        $this->assertEquals($sequence[504], "buzzbuzz");
-
-        $this->assertEquals($sequence[529], "test");
+        $this->assertEquals($sequence[302], "fizz fizz");
+        $this->assertEquals($sequence[504], "buzz buzz");
     }
  
 }
