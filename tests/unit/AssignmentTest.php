@@ -114,7 +114,6 @@ class SampleTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals($sequence[302], "fizz fizz");
         $this->assertEquals($sequence[504], "buzz buzz");
     }
- 
 }
 
 
